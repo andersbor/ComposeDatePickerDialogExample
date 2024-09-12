@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                                 TextButton(onClick = { openDialog = false })
                                 { Text("Cancel") }
                             }) {
-                            DatePicker(state = datePickerState) // other content!?
+                            DatePicker(state = datePickerState)
                         }
                     }
                 }
