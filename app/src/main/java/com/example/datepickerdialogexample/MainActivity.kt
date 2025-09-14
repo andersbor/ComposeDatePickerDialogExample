@@ -49,7 +49,8 @@ private fun MainScreen() {
             modifier = Modifier.padding(innerPadding)
         ) {
             Text(
-                if (selectedDate != null) dateFormatterLocal.format(selectedDate)
+                if (selectedDate != null)
+                    dateFormatterLocal.format(selectedDate)
                 else "Show Date Picker Dialog"
             )
         }
