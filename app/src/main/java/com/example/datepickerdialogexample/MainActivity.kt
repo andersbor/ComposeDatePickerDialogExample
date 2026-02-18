@@ -20,6 +20,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.example.datepickerdialogexample.ui.theme.DatePickerDialogExampleTheme
 import java.text.DateFormat
 
@@ -46,7 +47,7 @@ private fun MainScreen() {
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Button(
             onClick = { isDatePickerDialogOpen = true },
-            modifier = Modifier.padding(innerPadding)
+            modifier = Modifier.padding(innerPadding).padding(16.dp)
         ) {
             Text(
                 if (selectedDate != null)
